@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>
+(function(){
+  try {
+    var t = localStorage.getItem('nanban-theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', t);
+  } catch(e) { document.documentElement.setAttribute('data-theme', 'dark'); }
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nanban Mushroom Farm | Fresh Oyster Mushrooms in Madurai</title>
+<meta name="description" content="Nanban Mushroom Farm grows 100% natural, chemical-free oyster mushrooms on a hi-tech farm in Madurai, Tamil Nadu. Fresh, rich in protein, and freshly cultivated daily.">
+<meta name="keywords" content="oyster mushroom Madurai, mushroom farm Tamil Nadu, fresh mushroom buy, Nanban Mushroom Farm, natural mushroom, hi-tech mushroom farming">
+<link rel="canonical" href="https://nanbanmushroomfarm.com/">
+<meta property="og:title" content="Nanban Mushroom Farm | From Nature, For a Healthy Future">
+<meta property="og:description" content="100% natural, chemical-free oyster mushrooms grown on a hi-tech farm in Madurai, Tamil Nadu.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/hero-poster.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500;600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nanban Mushroom Farm",
+  "image": "images/hero-poster.png",
+  "description": "Hi-tech oyster mushroom farm producing 100% natural, chemical-free mushrooms.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Madurai",
+    "addressRegion": "Tamil Nadu",
+    "addressCountry": "IN"
+  },
+  "telephone": "+91-63811-01094",
+  "email": "nanbanmusroom@gmail.com",
+  "sameAs": [
+    "https://facebook.com/nanbanmushroom",
+    "https://instagram.com/nanban_Mushroom"
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-nanban fixed-top py-0">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Nanban Mushroom Farm Logo" class="img-fluid me-2">NANBAN <span>MUSHROOM</span> FARM</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" style="border-color:var(--leaf)">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="process.html">Farming Process</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle light and dark theme">
+            <i class="bi bi-moon-stars-fill"></i>
+            <i class="bi bi-sun-fill"></i>
+          </button>
+        </li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="btn-call" href="tel:+916381101094"><i class="bi bi-telephone-fill me-1"></i> 63811 01094</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="hero-badge-float seal d-none d-md-flex">
+    <div class="seal-text">100%<br>Natural<small>Chemical Free</small></div>
+  </div>
+
+  <!-- ambient floating sticker mushrooms -->
+  <svg class="mushroom-sticker d-none d-lg-block" style="width:70px; top:14%; right:8%;" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 15C25 15 12 38 12 50c0 4 3 6 7 4 8-4 20-6 31-6s23 2 31 6c4 2 7 0 7-4C88 38 75 15 50 15Z" fill="var(--bark)" stroke="var(--forest)" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="34" cy="34" r="4" fill="#fff"/>
+    <circle cx="58" cy="28" r="3" fill="#fff"/>
+    <rect x="42" y="48" width="16" height="26" rx="6" fill="#FFF7E8" stroke="var(--forest)" stroke-width="4"/>
+  </svg>
+  <svg class="mushroom-sticker delay1 d-none d-lg-block" style="width:48px; bottom:20%; right:16%;" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 15C25 15 12 38 12 50c0 4 3 6 7 4 8-4 20-6 31-6s23 2 31 6c4 2 7 0 7-4C88 38 75 15 50 15Z" fill="var(--leaf)" stroke="var(--forest)" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="34" cy="34" r="4" fill="#fff"/>
+    <circle cx="58" cy="28" r="3" fill="#fff"/>
+    <rect x="42" y="48" width="16" height="26" rx="6" fill="#FFF7E8" stroke="var(--forest)" stroke-width="4"/>
+  </svg>
+  <svg class="mushroom-sticker delay2 d-none d-lg-block" style="width:36px; top:34%; left:10%;" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 15C25 15 12 38 12 50c0 4 3 6 7 4 8-4 20-6 31-6s23 2 31 6c4 2 7 0 7-4C88 38 75 15 50 15Z" fill="var(--spot)" stroke="var(--forest)" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="34" cy="34" r="4" fill="#fff"/>
+    <circle cx="58" cy="28" r="3" fill="#fff"/>
+    <rect x="42" y="48" width="16" height="26" rx="6" fill="#FFF7E8" stroke="var(--forest)" stroke-width="4"/>
+  </svg>
+
+  <div class="container position-relative">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <p class="script mb-1">"From Nature, For a Healthy Future"</p>
+        <h1>Nanban<br>Mushroom Farm</h1>
+        <div class="hero-divider"></div>
+        <p class="fs-5 text-uppercase" style="letter-spacing:0.18em; color:var(--cream-dim)">Fresh &bull; Natural &bull; Nutritious</p>
+        <p class="mt-3 mb-4" style="max-width:520px; color:var(--cream-dim)">Oyster mushrooms grown on our own hi-tech farm in Madurai — no chemicals, no shortcuts, just healthy food for your family's table.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="contact.html" class="btn-call"><i class="bi bi-basket3-fill me-1"></i> Enquire / Order</a>
+          <a href="https://wa.me/916381101094" target="_blank" rel="noopener" class="btn-outline-leaf"><i class="bi bi-whatsapp me-1"></i> WhatsApp Us</a>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="mushroom-3d-stage">
+          <!-- Signature 3D cartoon mushroom: layered cap/gills/stem/face,
+               floating + tilting on independent CSS animation axes. -->
+          <svg class="mushroom-3d" viewBox="0 0 300 320" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="150" cy="290" rx="70" ry="12" fill="var(--forest)" opacity="0.08"/>
+            <g class="cap-main">
+              <path d="M150 30C80 30 40 95 38 140c-1 14 10 20 24 13 26-13 55-19 88-19s62 6 88 19c14 7 25 1 24-13C260 95 220 30 150 30Z"
+                    fill="var(--spot)" stroke="var(--forest)" stroke-width="7" stroke-linejoin="round"/>
+              <path d="M150 30C110 30 78 60 58 95c30-14 62-21 92-21s62 7 92 21C222 60 190 30 150 30Z" fill="#EF7B52" opacity="0.55"/>
+              <circle cx="96" cy="78" r="10" fill="#fff"/>
+              <circle cx="150" cy="60" r="8" fill="#fff"/>
+              <circle cx="204" cy="82" r="11" fill="#fff"/>
+              <circle cx="128" cy="100" r="6" fill="#fff"/>
+              <circle cx="178" cy="102" r="6" fill="#fff"/>
+            </g>
+            <rect x="118" y="140" width="64" height="110" rx="24" fill="#FFF7E8" stroke="var(--forest)" stroke-width="7"/>
+            <path d="M40 140c22-13 50-19 88-19s66 6 88 19" fill="none" stroke="var(--bark-deep)" stroke-width="5" stroke-linecap="round" opacity="0.4"/>
+            <circle cx="132" cy="178" r="7" fill="var(--forest)"/>
+            <circle cx="168" cy="178" r="7" fill="var(--forest)"/>
+            <path d="M130 202c8 10 32 10 40 0" fill="none" stroke="var(--forest)" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="118" cy="192" r="8" fill="var(--spot)" opacity="0.35"/>
+            <circle cx="182" cy="192" r="8" fill="var(--spot)" opacity="0.35"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Trust strip -->
+<div class="wood-strip">Healthy Food &nbsp;&bull;&nbsp; Healthy Family &nbsp;&bull;&nbsp; Healthy Future</div>
+
+<!-- Why us -->
+<section class="bg-forest">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-7">
+        <p class="eyebrow mb-2">Why Nanban</p>
+        <h2>Grown Right, Straight From The Farm</h2>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card-nanban">
+          <div class="icon-wrap"><i class="bi bi-tree-fill"></i></div>
+          <h3 class="h5 mb-2">Rich in Protein</h3>
+          <p class="text-white-50 mb-0">A natural, plant-based protein source that fits right into everyday cooking.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-nanban">
+          <div class="icon-wrap"><i class="bi bi-shield-fill-check"></i></div>
+          <h3 class="h5 mb-2">Boosts Immunity</h3>
+          <p class="text-white-50 mb-0">Packed with nutrients that support your body's natural defences.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-nanban">
+          <div class="icon-wrap"><i class="bi bi-flower1"></i></div>
+          <h3 class="h5 mb-2">Freshly Cultivated</h3>
+          <p class="text-white-50 mb-0">Harvested from our hi-tech growing rooms and delivered fresh, never stored long.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About preview -->
+<section class="bg-forest-2">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="rounded-4 p-4 p-md-5 text-center" style="background:var(--forest-2); border:1px solid rgba(27,67,50,0.08);">
+          <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:380px;">
+            <ellipse cx="200" cy="235" rx="150" ry="14" fill="var(--forest)" opacity="0.08"/>
+            <!-- back mushroom (bark) -->
+            <g transform="translate(70,60) scale(0.75)">
+              <path d="M100 10C55 10 25 55 24 85c-1 9 7 13 16 8 17-8 37-12 60-12s43 4 60 12c9 5 17 1 16-8C199 55 145 10 100 10Z" fill="var(--bark)" stroke="var(--forest)" stroke-width="6" stroke-linejoin="round"/>
+              <circle cx="65" cy="52" r="6" fill="#fff"/><circle cx="105" cy="40" r="5" fill="#fff"/><circle cx="140" cy="55" r="6" fill="#fff"/>
+              <rect x="78" y="88" width="44" height="70" rx="16" fill="#FFF7E8" stroke="var(--forest)" stroke-width="6"/>
+            </g>
+            <!-- front mushroom (spot color) -->
+            <g transform="translate(190,20)">
+              <path d="M100 10C55 10 25 55 24 85c-1 9 7 13 16 8 17-8 37-12 60-12s43 4 60 12c9 5 17 1 16-8C199 55 145 10 100 10Z" fill="var(--spot)" stroke="var(--forest)" stroke-width="6" stroke-linejoin="round"/>
+              <circle cx="65" cy="52" r="6" fill="#fff"/><circle cx="105" cy="40" r="5" fill="#fff"/><circle cx="140" cy="55" r="6" fill="#fff"/>
+              <rect x="78" y="88" width="44" height="88" rx="18" fill="#FFF7E8" stroke="var(--forest)" stroke-width="6"/>
+              <circle cx="90" cy="120" r="5" fill="var(--forest)"/><circle cx="112" cy="120" r="5" fill="var(--forest)"/>
+              <path d="M92 134c5 6 16 6 21 0" fill="none" stroke="var(--forest)" stroke-width="4" stroke-linecap="round"/>
+            </g>
+            <!-- leaf mushroom small -->
+            <g transform="translate(140,110) scale(0.55)">
+              <path d="M100 10C55 10 25 55 24 85c-1 9 7 13 16 8 17-8 37-12 60-12s43 4 60 12c9 5 17 1 16-8C199 55 145 10 100 10Z" fill="var(--leaf)" stroke="var(--forest)" stroke-width="6" stroke-linejoin="round"/>
+              <rect x="78" y="88" width="44" height="70" rx="16" fill="#FFF7E8" stroke="var(--forest)" stroke-width="6"/>
+            </g>
+          </svg>
+          <p class="eyebrow mt-3 mb-0">1,500 Bags &amp; Growing</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <p class="eyebrow mb-2">Our Farm</p>
+        <h2 class="mb-3">A Hi-Tech Setup, Rooted in Nature</h2>
+        <p class="text-white-50">Nanban Mushroom Farm runs a hi-tech oyster mushroom setup in Madurai, built for consistent, chemical-free harvests all year round — not just one season.</p>
+        <p class="text-white-50">From spawn to harvest, every bag is grown under controlled conditions so what reaches you is always fresh, clean, and full of nutrition.</p>
+        <a href="about.html" class="btn-outline-leaf mt-2">Know Our Story <i class="bi bi-arrow-right ms-1"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-forest text-center">
+  <div class="container">
+    <p class="eyebrow mb-2">Get In Touch</p>
+    <h2 class="mb-3">Fresh Mushrooms, Straight To You</h2>
+    <p class="text-white-50 mb-4 mx-auto" style="max-width:560px">Bulk orders, retail packs, or a farm visit — reach out and we'll take care of the rest.</p>
+    <div class="d-flex justify-content-center flex-wrap gap-3">
+      <a href="tel:+916381101094" class="btn-call"><i class="bi bi-telephone-fill me-1"></i> Call 63811 01094</a>
+      <a href="mailto:nanbanmusroom@gmail.com" class="btn-outline-leaf"><i class="bi bi-envelope-fill me-1"></i> Email Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <p class="brand fs-5 mb-2">NANBAN <span>MUSHROOM</span> FARM</p>
+        <p class="text-white-50 small">100% Natural &amp; Chemical Free oyster mushrooms, grown fresh in Madurai, Tamil Nadu.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="https://facebook.com/nanbanmushroom" target="_blank" rel="noopener" class="social-pill"><i class="bi bi-facebook"></i></a>
+          <a href="https://instagram.com/nanban_Mushroom" target="_blank" rel="noopener" class="social-pill"><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/916381101094" target="_blank" rel="noopener" class="social-pill"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <p class="text-uppercase small fw-600 mb-3" style="color:var(--leaf); letter-spacing:0.1em">Quick Links</p>
+        <ul class="list-unstyled small d-flex flex-column gap-2">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="process.html">Farming Process</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <p class="text-uppercase small fw-600 mb-3" style="color:var(--leaf); letter-spacing:0.1em">Contact</p>
+        <ul class="list-unstyled small d-flex flex-column gap-2 text-white-50">
+          <li><i class="bi bi-telephone-fill me-2 text-leaf"></i>+91 63811 01094</li>
+          <li><i class="bi bi-envelope-fill me-2 text-leaf"></i>nanbanmusroom@gmail.com</li>
+          <li><i class="bi bi-geo-alt-fill me-2 text-leaf"></i>Madurai, Tamil Nadu</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="border-secondary mt-4 mb-3">
+    <p class="text-center text-white-50 small mb-0">&copy; <span id="year"></span> Nanban Mushroom Farm. All rights reserved.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/916381101094" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
