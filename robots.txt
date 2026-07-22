@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nanbanmushroomfarm.com/sitemap.xml
+Sitemap: https://nanbanmushroom.com/sitemap.xml
